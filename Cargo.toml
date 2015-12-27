@@ -1,0 +1,19 @@
+[package]
+
+name = "tollmdb"
+version = "0.0.1"
+authors = [ "vycb <vycb777@gmail.com>" ]
+
+[[bin]]
+name = "tollmdb"
+
+[dependencies]
+log="*"
+env_logger = "*"
+rustc-serialize = "*"
+
+[dependencies.rusttol]
+path = "../rusttol"
+
+[dependencies.lmdb-rs]
+path = "../lmdb-rs"
