@@ -43,7 +43,7 @@ impl LMDBClient {
 
 	pub fn new() -> LMDBClient {
 		let eb = EnvBuilder::new();
-		eb.map_size(10001024u64);
+		eb.map_size(100001024 as u64);
 		let env = eb.open(&Path::new("tol-lmdb"), 0o777).unwrap();
 		let db = env.get_default_db(DbFlags::empty()).unwrap();
 		
